@@ -226,9 +226,16 @@ html:has(body._lock){
 
 @media (max-width:910px) {
     .container:has(.header){
-        padding: 10px 16px 100px 20px;
+        padding: 10px 16px 8px 20px;
+        margin-bottom: 100px;
+        background-color: white;
+        z-index: 5;
+        position: fixed;
+        width: 100%;
+      
     }
 
+   
     
     
     .mobile__bg{
@@ -264,7 +271,7 @@ html:has(body._lock){
 
     .nav__list__wrapper{
         flex-basis: auto;
-        margin-bottom: 40px
+        margin-bottom: 43px
     }
     
     .nav__list{
@@ -295,12 +302,10 @@ html:has(body._lock){
         color: white;
     }
 
-    .header{
-        position: relative;
-    }
 
+   
 
-    .menu__icon-wrap._active{
+    .header._active .menu__icon-wrap{
         background-color: #fff;
     }
 
@@ -357,7 +362,7 @@ html:has(body._lock){
     }
 
     .nav__list__item{
-        margin-bottom: 30px;
+        margin-bottom: 36px;
         margin-inline: 0px;
     }
 
@@ -440,6 +445,9 @@ html:has(body._lock){
 
 
 @media (max-width:910px) {
+    .container:has(.hero){
+        margin-top: 147px;
+    }
     .hero__text h1{
         font-size: 35px;
         line-height: 42px;
@@ -461,12 +469,12 @@ html:has(body._lock){
 
     .hero__text h1{
         padding-right: 5%;
-        margin-bottom: 19px;
+        margin-bottom: 20px;
     }
 
     .hero__text{
         flex-basis: auto;
-        margin-bottom: 146px;
+        margin-bottom: 145px;
     }
 
     .hero__media{
