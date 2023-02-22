@@ -385,7 +385,7 @@ html:has(body._lock){
 .hero{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 75px;
 }
 
 .hero__text{
@@ -456,6 +456,10 @@ html:has(body._lock){
     .mobile__bg{
         display: block;
     }
+
+    .hero{
+        margin-bottom: 63px;
+    }
 }
 
 @media (max-width:730px) {
@@ -498,5 +502,139 @@ html:has(body._lock){
         
     }
 
+    
+}
+
+/**********************************/
+
+.latest__competitions{
+    min-width: 0;
+}
+
+.latest__competitions__header{
+    font-family: 'Rajdhani';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    color: #343434;
+    margin-bottom: 23px;
+}
+
+.swiper__slide{
+    padding: 10px;
+    width: auto;
+}
+
+.swiper__content__wrapper{
+   
+    background: #FFFFFF;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.img__wrap{
+    width: 270px;
+    height: 160px;
+    margin-bottom: 23px;
+}
+
+.first__swiper{
+    margin: 0 -10px 0 -10px;
+}
+.first__swiper__button{
+    display: none;
+}
+
+.first__swiper:hover .first__swiper__button{
+    display: block;
+}
+
+.arrow__button{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    background-color:  #346CD9;
+    border-radius: 10px 0px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.card__header__text{
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #252A34;
+    margin-bottom: 8px;
+}
+
+.card__header__price{
+    margin-bottom: 12px;
+}
+
+.card__header__redprice{
+    font-family: 'Rajdhani';
+    font-weight: 700;
+    font-size: 30px;
+    color: #FF2E63;
+    margin-right: 7px;
+}
+
+.card__header__greyprice{
+    font-family: 'Rajdhani';
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration-line: line-through;
+    color: #999999;
+}
+
+.card__header__tickets{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #343434;
+}
+
+.card__text__wrapper{
+    padding: 0 20px 11px 20px;
+    position: relative;
+}
+
+.first__swiper__button{
+    color: #858585;    
+}
+
+
+@media (max-width: 1300px)
+{
+    .container:has(.latest__competitions){
+        padding: 0 0px 0 55px;
+    }
+   
+}
+@media (max-width:910px) {
+    .container:has(.latest__competitions){
+        padding: 0px 0px 0px 16px;
+    }
+    .first__swiper:hover .first__swiper__button{
+        display: none;
+    }
+
+    .first__swiper{
+        margin-left: -11px;
+    }
+
+    .latest__competitions__header{
+        margin-bottom: 10px;
+    }
+
+    .first__swiper{
+        margin-right: 0;
+    }
     
 }

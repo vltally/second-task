@@ -8,3 +8,23 @@ if (iconMenu) {
     });
 }
 
+
+new Swiper('.first__swiper', {
+    direction: 'horizontal',
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    touchRation: 1.5,
+    keyboard:{
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true,
+    },
+    simulateTouch: false,
+    slidesPerView: 'auto',
+    watchOverflow: true,
+    spaceBetween: 10,
+    slidesPerGroup: 1,
+  });
