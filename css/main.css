@@ -509,6 +509,7 @@ html:has(body._lock){
 
 .latest__competitions{
     min-width: 0;
+    margin-bottom: 83px;
 }
 
 .latest__competitions__header{
@@ -613,7 +614,7 @@ html:has(body._lock){
 @media (max-width: 1300px)
 {
     .container:has(.latest__competitions){
-        padding: 0 0px 0 55px;
+        padding: 0 10px 0 55px;
     }
    
 }
@@ -636,5 +637,116 @@ html:has(body._lock){
     .first__swiper{
         margin-right: 0;
     }
+    .latest__competitions{
+        margin-bottom: 43px;
+    }
+}
+
+
+/*****************************/
+
+.howitworks__header{
+    font-family: 'Rajdhani';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    color: #343434;
+    margin-bottom: 53px;
+
+}
+
+.howitworks__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.howitworks__item{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+
+.howitworks__maincontent{
+    text-align: center;
+    width: 250px;
+}
+
+.howitworks__text{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #343434;
+}
+
+.howitworks__arrowwrap{
+    margin: 20px 12px 0 12px;
+}
+
+.howitworks__arrowwrap img{
+    width: 32px;
+}
+
+.howitworks__text span{
+    font-weight: 600;
+}
+
+
+.howitworks__imgwrap{
+    margin-bottom: 27px;
+}
+
+@media (max-width: 1300px){
+    .howitworks__item:first-child{
+        margin-left: 56px;
+    }
+}
+
+@media (max-width: 730px){
+    .container:has(.howitworks){
+        
+    }
     
+    
+    /* .howitworks__maincontent{
+        padding-left: 7px;
+    } */
+    .howitworks__header{
+        margin-bottom: 22px;
+    }
+    .howitworks__arrowwrap{
+        margin: 7px 0 4px 0;
+    }
+    .howitworks__arrowwrap img{
+        transform: scale(1.1) rotate(90deg);
+    }
+    .howitworks__content{
+        flex-direction: column;
+    }
+    .howitworks__item{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 27px;
+        margin-left: -3px;
+    }
+    .howitworks__item:first-child{
+        margin-left: 4px;
+    }
+
+    .howitworks__arrowwrap{
+        margin-bottom: 3px;
+    }
+
+    .howitworks__imgwrap{
+        margin: 30px 0 30px 0;
+    }
+
+    .firstwrap{
+        margin-top: 0;
+        margin-bottom: 29px;
+    }
+
 }
