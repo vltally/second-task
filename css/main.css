@@ -543,12 +543,17 @@ html:has(body._lock){
 .first__swiper{
     margin: 0 -10px 0 -10px;
 }
+
 .first__swiper__button{
     display: none;
 }
 
 .first__swiper:hover .first__swiper__button{
-    display: block;
+    display:block
+}
+
+.swiper-button-prev{
+    left: 20px;
 }
 
 .arrow__button{
@@ -645,6 +650,10 @@ html:has(body._lock){
 
 /*****************************/
 
+.howitworks{
+    margin-bottom: 70px;
+}
+
 .howitworks__header{
     font-family: 'Rajdhani';
     font-weight: 700;
@@ -703,14 +712,17 @@ html:has(body._lock){
     .howitworks__item:first-child{
         margin-left: 56px;
     }
+
+    .container:has(.howitworks){
+        padding: 0 50px 0 50px;
+    }
 }
 
 @media (max-width: 730px){
-    .container:has(.howitworks){
-        
+  
+    .howitworks{
+        margin-bottom: 33px;
     }
-    
-    
     /* .howitworks__maincontent{
         padding-left: 7px;
     } */
@@ -750,3 +762,109 @@ html:has(body._lock){
     }
 
 }
+
+
+
+/*************************************************************************************/
+
+
+.container:has(.reviews){
+    padding: 0;
+}
+
+.second__swiper{
+    height: 400px;
+}
+
+.swiper2__slide{
+    display: flex;
+}
+
+.reviews__textblock{
+    flex-basis: 50%;
+}
+
+.reviews__imagewrapper{
+    flex-basis: 50%;
+}
+
+.reviews__imagewrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination{
+    left: 22.1%!important;
+    bottom: 80px!important;
+    width: 80px!important;
+}
+
+
+
+.swiper-pagination-bullet{
+    background-color: #FF2E63;
+    height: 10px;
+    width: 10px;
+    margin-right: 11px!important;
+}
+
+.reviews__textblock{
+    background: rgba(52, 108, 217, 0.12);
+    display: flex;
+    padding-top: 78px;
+}
+
+
+.reviews__maintext{
+    font-family: 'Open Sans'; 
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #343434;
+    padding-inline: 5%;
+    margin-bottom: 30px;
+}
+
+.reviews__name{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #343434;
+}
+
+
+@media(max-width: 910px){
+    .swiper-pagination{
+        left: 21%!important;
+        bottom: 55px!important;
+    }
+}
+
+@media(max-width: 730px){
+    .reviews__imagewrapper{
+        display: none;
+    }
+    .reviews__textblock{
+        flex-basis: 100%;
+    }
+    
+    .swiper-pagination{
+        left: 44%!important;
+        
+    }
+    .reviews__textblock{
+        padding-top: 55px;
+    }
+}
+
+@media(max-width: 490px){
+    .swiper-pagination{
+        left: 40%!important;
+    }
+}
+

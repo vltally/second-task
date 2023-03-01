@@ -11,7 +11,6 @@ if (iconMenu) {
 
 new Swiper('.first__swiper', {
     direction: 'horizontal',
-    loop: true,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -22,9 +21,32 @@ new Swiper('.first__swiper', {
         onlyInViewport: true,
         pageUpDown: true,
     },
-    simulateTouch: false,
+    simulateTouch: true,
     slidesPerView: 'auto',
     watchOverflow: true,
     spaceBetween: 10,
     slidesPerGroup: 1,
+  });
+
+  new Swiper('.second__swiper', {
+    direction: 'horizontal',
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    touchRation: 1.5,
+    keyboard:{
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true,
+    },
+    simulateTouch: true,
+    slidesPerView: 'auto',
+    watchOverflow: true,
+    slidesPerGroup: 1,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+    }
   });
