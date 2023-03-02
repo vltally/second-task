@@ -544,13 +544,9 @@ html:has(body._lock){
     margin: 0 -10px 0 -10px;
 }
 
-.first__swiper__button{
-    display: none;
-}
 
-.first__swiper:hover .first__swiper__button{
-    display:block
-}
+
+
 
 .swiper-button-prev{
     left: 20px;
@@ -611,9 +607,6 @@ html:has(body._lock){
     position: relative;
 }
 
-.first__swiper__button{
-    color: #858585;    
-}
 
 
 @media (max-width: 1300px)
@@ -626,9 +619,6 @@ html:has(body._lock){
 @media (max-width:910px) {
     .container:has(.latest__competitions){
         padding: 0px 0px 0px 16px;
-    }
-    .first__swiper:hover .first__swiper__button{
-        display: none;
     }
 
     .first__swiper{
@@ -763,6 +753,12 @@ html:has(body._lock){
 
 }
 
+@media(max-width:355px){
+    .howitworks__maincontent{
+        width: auto;
+    }
+}
+
 
 
 /*************************************************************************************/
@@ -772,6 +768,9 @@ html:has(body._lock){
     padding: 0;
 }
 
+.reviews{
+    margin-bottom: 100px;
+}
 .second__swiper{
     height: 400px;
 }
@@ -846,6 +845,10 @@ html:has(body._lock){
 }
 
 @media(max-width: 730px){
+    .reviews{
+        margin-bottom: 60px;
+    }
+
     .reviews__imagewrapper{
         display: none;
     }
@@ -868,3 +871,134 @@ html:has(body._lock){
     }
 }
 
+
+/*********************************************/
+
+.latest__winners{
+    min-width: 0;
+    margin-bottom: 83px;
+}
+
+.latest__winners__header{
+    font-family: 'Rajdhani';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    color: #343434;
+    margin-bottom: 23px;
+}
+
+.imgs2__wrap{
+    width: 270px;
+    height: 200px;
+    margin-bottom: 23px;
+}
+
+.cards2__text__wrapper{
+    padding: 0 20px 19px 20px;
+}
+
+@media (max-width: 1300px)
+{
+    .container:has(.latest__winners){
+        padding: 0 10px 0 55px;
+    }
+   
+}
+@media (max-width:910px) {
+    .container:has(.latest__winners){
+        padding: 0px 0px 0px 16px;
+    }
+
+    .latest__winners__header{
+        margin-bottom: 22px;
+    }
+
+
+    .latest__winners{
+        margin-bottom: 43px;
+    }
+}
+
+
+
+/*************************************************/
+
+.container:has(.footer){
+    padding: 0;
+}
+
+.footer{
+    background-color: #346CD9;
+    padding: 16px 55px 16px;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo__white{
+    font-family: 'Rajdhani';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+.footer__list{
+    display: flex;
+}
+
+.footer__list__item{
+    display: inline-block;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    margin-left: 30px;
+    color:#fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.footer__list__item:hover{
+    color: #999999;
+}
+
+@media(max-width:946px){
+    .footer__list{
+        justify-content: center;
+    }
+
+    .footer__list__item{
+        margin-inline: 8px;
+    }
+}
+
+@media(max-width:910px){
+    .logo__white{
+        margin-bottom: 30px;
+    }
+
+    .footer{
+        padding: 16px;
+    }
+    .wrapper{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer__list{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .footer__list__item{
+        margin: 0 0 20px 0;
+    }
+    .footer__list__item:last-child{
+        margin: 0;
+    }
+}
