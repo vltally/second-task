@@ -10,6 +10,11 @@ if (iconMenu) {
 
 
 new Swiper('.first__swiper', {
+    preloadImages: false,
+    lazy:{
+      loadOnTransitionStart: false,
+      loadPrevNext: false,
+    },
     direction: 'horizontal',
     navigation: {
       nextEl: '.swiper-button-next',
@@ -29,6 +34,11 @@ new Swiper('.first__swiper', {
   });
 
   new Swiper('.second__swiper', {
+    preloadImages: false,
+    lazy:{
+      loadOnTransitionStart: false,
+      loadPrevNext: false,
+    },
     direction: 'horizontal',
     navigation: {
       nextEl: '.swiper-button-next',
