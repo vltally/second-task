@@ -52,18 +52,27 @@ html:has(body._lock){
     margin-right: 6px;
 }
 
-.container{
+/* .container{
     max-width: 1280px;
     margin: auto;
     padding: 0 55px 0 55px;
-}
+} */
 
 .header{
+ 
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 55px 0 55px;
+    
+    /* border: solid; */
+}
+
+.header-container{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    /* border: solid; */
 }
+
 
 .logo__text{
     text-transform: uppercase;
@@ -215,17 +224,40 @@ html:has(body._lock){
     transform: scale(1) translate(0px, -50%);
 }
 
-.container:has(.header){
+.header{
     padding-top: 30px;
     padding-bottom: 121px;
 }
 
 
+@media (max-width: 1105px){
+    .header{
+        padding-inline: 15px;
+    }
+    .logo__link{
+        flex-basis: 13%;
+    }
+    .nav__and__auth{
+        flex-basis: 87%;
+        justify-content: flex-end;
+    }
+    .nav__list__wrapper{
+        flex-basis: 76%;
+    }
+    
+}
 
-
+@media (max-width: 935px){
+    .logo__text{
+        font-size: 25px;
+    }
+    .logo__link{
+        width: 109px;
+    }
+}
 
 @media (max-width:910px) {
-    .container:has(.header){
+    .header{
         padding: 10px 16px 8px 20px;
         margin-bottom: 100px;
         background-color: white;
@@ -235,7 +267,10 @@ html:has(body._lock){
       
     }
 
-   
+   .logo__text{
+    width: 137px;
+    font-size: 30px;
+   }
     
     
     .mobile__bg{
@@ -247,7 +282,7 @@ html:has(body._lock){
         top: 0;
     }
     
-    .header._active .nav__and__auth{
+    .header-container._active .nav__and__auth{
         right: 0;
         transition: all 0.3s ease 0s;
         width: 100%;
@@ -305,7 +340,7 @@ html:has(body._lock){
 
    
 
-    .header._active .menu__icon-wrap{
+    .header-container._active .menu__icon-wrap{
         background-color: #fff;
     }
 
@@ -334,7 +369,7 @@ html:has(body._lock){
         background-color: #FF2E63;
     }
     
-    .header._active .mobile__bg{
+    .header-container._active .mobile__bg{
         position: fixed;
         width: 100%;
         right: 0;
@@ -344,14 +379,14 @@ html:has(body._lock){
         z-index: 4;
     }
     
-    .header._active .logo__link{
+    .header-container._active .logo__link{
         z-index: 5;
         /* width: auto;
         right: 0; */
         transition: all 0.3s ease 0s;
     }
     
-    .header._active .logo__link .logo__text > *{
+    .header-container._active .logo__link .logo__text > *{
 
         transition: all 0.5s ease 0s;
         color: white;
@@ -378,11 +413,14 @@ html:has(body._lock){
     display: none;
 }
 
-.container:has(.hero){
+.hero{
+    max-width: 1280px;
+    margin: auto;
     padding: 0 0 0 55px;
+    
 }
 
-.hero{
+.hero .container{
     display: flex;
     justify-content: space-between;
     margin-bottom: 75px;
@@ -440,12 +478,16 @@ html:has(body._lock){
     
 }
 
-
+@media (max-width: 1105px){
+    .hero{
+        padding-left: 15px;
+    }
+}
 
 
 
 @media (max-width:910px) {
-    .container:has(.hero){
+    .hero{
         margin-top: 147px;
     }
     .hero__text h1{
@@ -457,17 +499,17 @@ html:has(body._lock){
         display: block;
     }
 
-    .hero{
+    .hero .container{
         margin-bottom: 63px;
     }
 }
 
 @media (max-width:730px) {
-    .container:has(.hero){
+    .hero{
         padding: 0 16px 0 16px;
     }
     
-    .hero{
+    .hero .container{
         flex-direction: column;
     }
 
@@ -499,15 +541,20 @@ html:has(body._lock){
         min-width: 425px;
         min-height: 170px;
         
-        
+    
     }
 
     
 }
 
 /**********************************/
-
 .latest__competitions{
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 55px 0 55px;
+}
+
+.latest__competitions .container{
     min-width: 0;
     margin-bottom: 83px;
 }
@@ -543,9 +590,6 @@ html:has(body._lock){
 .first__swiper{
     margin: 0 -10px 0 -10px;
 }
-
-
-
 
 
 .swiper-button-prev{
@@ -611,13 +655,20 @@ html:has(body._lock){
 
 @media (max-width: 1300px)
 {
-    .container:has(.latest__competitions){
+    .latest__competitions{
         padding: 0 10px 0 55px;
     }
    
 }
+
+@media (max-width: 1105px){
+    .latest__competitions{
+        padding-left: 15px;
+    }
+}
+
 @media (max-width:910px) {
-    .container:has(.latest__competitions){
+    .latest__competitions{
         padding: 0px 0px 0px 16px;
     }
 
@@ -632,7 +683,7 @@ html:has(body._lock){
     .first__swiper{
         margin-right: 0;
     }
-    .latest__competitions{
+    .latest__competitions .container{
         margin-bottom: 43px;
     }
 }
@@ -641,6 +692,12 @@ html:has(body._lock){
 /*****************************/
 
 .howitworks{
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 55px 0 55px;
+}
+
+.howitworks .container{
     margin-bottom: 70px;
 }
 
@@ -698,20 +755,34 @@ html:has(body._lock){
     margin-bottom: 27px;
 }
 
-@media (max-width: 1300px){
+@media (max-width: 1277px){
     .howitworks__item:first-child{
         margin-left: 56px;
     }
 
-    .container:has(.howitworks){
+    .howitworks__content{
+        margin-left: -55px;
+    }
+
+    .howitworks{
         padding: 0 50px 0 50px;
+    }
+}
+
+@media (max-width: 1105px){
+    .howitworks{
+        padding-inline: 15px;
     }
 }
 
 @media (max-width: 730px){
   
-    .howitworks{
+    .howitworks .container{
         margin-bottom: 33px;
+    }
+
+    .howitworks__content{
+        margin-left: 0;
     }
     /* .howitworks__maincontent{
         padding-left: 7px;
@@ -764,11 +835,13 @@ html:has(body._lock){
 /*************************************************************************************/
 
 
-.container:has(.reviews){
+.reviews{
     padding: 0;
+    max-width: 1280px;
+    margin: auto;
 }
 
-.reviews{
+.reviews .container{
     margin-bottom: 100px;
 }
 .second__swiper{
@@ -812,6 +885,8 @@ html:has(body._lock){
     background: rgba(52, 108, 217, 0.12);
     display: flex;
     padding-top: 78px;
+    justify-content: center;
+    padding-inline: 15px;
 }
 
 
@@ -822,8 +897,8 @@ html:has(body._lock){
     line-height: 30px;
     text-align: center;
     color: #343434;
-    padding-inline: 5%;
     margin-bottom: 30px;
+    white-space: pre-line;
 }
 
 .reviews__name{
@@ -842,10 +917,14 @@ html:has(body._lock){
         left: 21%!important;
         bottom: 55px!important;
     }
+
+    .reviews__maintext{
+        white-space: normal;
+    }
 }
 
 @media(max-width: 730px){
-    .reviews{
+    .reviews .container{
         margin-bottom: 60px;
     }
 
@@ -854,6 +933,10 @@ html:has(body._lock){
     }
     .reviews__textblock{
         flex-basis: 100%;
+    }
+
+    .reviews__maintext{
+        white-space: pre-line;
     }
     
     .swiper-pagination{
@@ -869,12 +952,22 @@ html:has(body._lock){
     .swiper-pagination{
         left: 40%!important;
     }
+
+    .reviews__maintext{
+        white-space: normal;
+    }
 }
 
 
 /*********************************************/
 
 .latest__winners{
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 55px 0 55px;
+}
+
+.latest__winners .container{
     min-width: 0;
     margin-bottom: 83px;
 }
@@ -900,13 +993,20 @@ html:has(body._lock){
 
 @media (max-width: 1300px)
 {
-    .container:has(.latest__winners){
+    .latest__winners{
         padding: 0 10px 0 55px;
     }
    
 }
+
+@media (max-width: 1105px){
+    .latest__winners{
+        padding-left: 15px;
+    }
+}
+
 @media (max-width:910px) {
-    .container:has(.latest__winners){
+    .latest__winners{
         padding: 0px 0px 0px 16px;
     }
 
@@ -915,7 +1015,7 @@ html:has(body._lock){
     }
 
 
-    .latest__winners{
+    .latest__winners .container{
         margin-bottom: 43px;
     }
 }
@@ -923,12 +1023,13 @@ html:has(body._lock){
 
 
 /*************************************************/
-
-.container:has(.footer){
+.footer{
     padding: 0;
+    max-width: 1280px;
+    margin: auto;
 }
 
-.footer{
+.footer .container{
     background-color: #346CD9;
     padding: 16px 55px 16px;
 }
@@ -984,7 +1085,7 @@ html:has(body._lock){
         margin-bottom: 30px;
     }
 
-    .footer{
+    .footer .container{
         padding: 16px;
     }
     .wrapper{

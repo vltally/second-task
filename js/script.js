@@ -1,4 +1,4 @@
-const header = document.querySelector('.header');
+const header = document.querySelector('.header-container');
 const iconMenu = document.querySelector('.menu__icon');
 if (iconMenu) {
     iconMenu.addEventListener("click", function () {
