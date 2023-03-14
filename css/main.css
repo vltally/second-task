@@ -283,12 +283,17 @@ html:has(body._lock) {
     padding-bottom: 121px
 }
 
-@media (max-width:935px) {
+@media (max-width:950px) {
     .logo__text {
-        font-size: 25px
+        font-size: 20px
     }
     .logo__link {
-        width: 109px
+        width: 109px;
+        
+    }
+
+    .nav__list__link{
+        font-size: 13px;
     }
 }
 
@@ -373,7 +378,7 @@ html:has(body._lock) {
     margin-top: -95px
 }
 
-@media (max-width:1105px) {
+@media (max-width:1125px) {
     .header {
         padding-inline: 15px
     }
@@ -395,6 +400,7 @@ html:has(body._lock) {
     .hero {
         padding-left: 15px
     }
+
 }
 
 .howitworks__content,
